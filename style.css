@@ -1,0 +1,171 @@
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-dark-blue-line: hsl(215, 32%, 27%);
+  --clr-dark-blue-card: hsl(216, 50%, 16%);
+  --clr-dark-blue-bg: hsl(217, 54%, 11%);
+  --clr-cyan: hsl(178, 100%, 50%);
+  --clr-soft-blue: hsl(215, 51%, 70%);
+
+  --fs-main: 1.125rem;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semi: 600;
+
+  --ff-main: "Outfit", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* General Styling */
+body {
+  font-family: var(--ff-main);
+  font-size: var(--fs-main);
+  font-weight: var(--fw-regular);
+  color: var(--clr-white);
+  background-color: var(--clr-dark-blue-bg);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+/* Card Styling */
+.card {
+  max-width: 21.875rem;
+  background-color: var(--clr-dark-blue-card);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card__img {
+  position: relative;
+  cursor: pointer;
+}
+
+.card__img img {
+  border-radius: 0.5rem;
+}
+
+.card__img:is(:hover, :focus)::after {
+  content: url(images/icon-view.svg);
+  background-color: var(--clr-cyan);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  border-radius: 0.5rem;
+}
+
+.card__title {
+  font-size: 1.4rem;
+  margin: 1.5rem 0 1rem 0;
+  cursor: pointer;
+}
+
+.card__title:hover {
+  color: var(--clr-cyan);
+}
+
+.card__description {
+  font-weight: var(--fw-light);
+  color: var(--clr-soft-blue);
+}
+
+.flex-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.flex-group-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card__value,
+.card__time {
+  font-size: 1rem;
+}
+
+.card__value {
+  color: var(--clr-cyan);
+  font-weight: var(--fw-semi);
+}
+
+.card__time {
+  color: var(--clr-soft-blue);
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-bottom: 1px solid var(--clr-dark-blue-line);
+}
+
+.card__profile {
+  margin: 1rem 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card__profile-avatar {
+  width: 32px;
+  border: 1px solid var(--clr-white);
+  border-radius: 50%;
+}
+
+.card__profile-name {
+  font-size: 1rem;
+  font-weight: var(--fw-semi);
+  color: var(--clr-soft-blue);
+}
+
+.card__profile-name span {
+  color: var(--clr-white);
+  cursor: pointer;
+}
+
+.card__profile-name span:hover {
+  color: var(--clr-cyan);
+}
