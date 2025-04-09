@@ -1,6 +1,6 @@
 # Frontend Mentor - Nft preview card compontent solution
 
-This is a solution to the [Nft preview card compontent challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ).
+This is a solution to the [Nft preview card compontent challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).
 
 ## Table of contents
 
@@ -20,8 +20,8 @@ This is a solution to the [Nft preview card compontent challenge on Frontend Men
 
 ### Links
 
-- Solution URL: [Frontend Mentor IO Solution](https://www.frontendmentor.io/solutions/social-links-profile-JlyysFsL8a)
-- Live Site URL: [Hosted on GitHub Pages](https://filipjanik.github.io/social-links-profile/)
+- Solution URL: [Frontend Mentor IO Solution](https://www.frontendmentor.io/solutions/nft-preview-card-component-KXBspvEtpQ)
+- Live Site URL: [Hosted on GitHub Pages](https://filipjanik.github.io/nft-preview-card-component/)
 
 ## My process
 
